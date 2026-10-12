@@ -1,0 +1,257 @@
+{
+  "picture": {
+    "hidden": true,
+    "url": "",
+    "size": 32,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Alex Example",
+    "headline": "Support Specialist",
+    "email": "candidate@example.com",
+    "phone": "",
+    "location": "Example City",
+    "website": {
+      "url": "https://example.com",
+      "label": "Example portfolio"
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Summary",
+    "icon": "",
+    "columns": 1,
+    "hidden": false,
+    "keepTogether": false,
+    "startOnNewPage": false,
+    "content": "<p>Fictional support specialist who maintains help articles and answers product questions.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "icon": "",
+      "columns": 3,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "experience": {
+      "title": "Experience",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "exp-0001",
+          "hidden": false,
+          "company": "Example Company",
+          "position": "Support Specialist",
+          "location": "Example City",
+          "period": "Jan 2023 - Dec 2024",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<ul><li><p>Answered product questions and maintained help articles.</p></li><li><p>Documented recurring issues for the engineering team.</p></li></ul>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "edu-0001",
+          "hidden": false,
+          "degree": "Diploma in Customer Support",
+          "school": "Example College",
+          "location": "Example City",
+          "period": "2021 - 2022"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "skills": {
+      "title": "Skills",
+      "icon": "",
+      "columns": 2,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "skill-0001",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Support",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Customer communication",
+            "Help documentation",
+            "Issue triage"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "icon": "",
+      "columns": 2,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "interests": {
+      "title": "Interests",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "awards": {
+      "title": "Awards",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "publications": {
+      "title": "Publications",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteering",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "bronzor",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": true,
+          "main": [
+            "summary",
+            "skills",
+            "experience",
+            "projects",
+            "education",
+            "languages",
+            "certifications",
+            "profiles",
+            "references",
+            "volunteer",
+            "interests",
+            "awards",
+            "publications"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 4,
+      "marginX": 14,
+      "marginY": 14,
+      "format": "a4",
+      "locale": "en-US",
+      "hideLinkUnderline": false,
+      "hideIcons": false,
+      "hideSectionIcons": true
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(234, 88, 12, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgb(255, 255, 255)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "400",
+          "400",
+          "600"
+        ],
+        "fontSize": 10.5,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 13.5,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": "FICTIONAL DEMO: Alex Example, all organizations, dates, roles, and claims are invented solely to demonstrate the template. Do not use them as your experience.",
+    "styleRules": []
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "picture": {
+    "hidden": true,
+    "url": "",
+    "size": 32,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "[FULL NAME]",
+    "headline": "[ROLE] | [2-3 strongest specialties]",
+    "email": "[EMAIL]",
+    "phone": "",
+    "location": "[CITY, COUNTRY (add remote/timezone note if applying abroad)]",
+    "website": {
+      "url": "",
+      "label": ""
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Summary",
+    "icon": "",
+    "columns": 1,
+    "hidden": false,
+    "keepTogether": false,
+    "startOnNewPage": false,
+    "content": "<p>[Write a short summary from verified facts. Include a metric only when it is documented. Ask the person about missing details; never invent experience or results.]</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "icon": "",
+      "columns": 3,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "experience": {
+      "title": "Experience",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "exp-0001",
+          "hidden": false,
+          "company": "[COMPANY]",
+          "position": "[TITLE]",
+          "location": "[LOCATION]",
+          "period": "[MMM YYYY - MMM YYYY]",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<ul><li><p>[What they did, with a real number or a [NEEDS METRIC: what to measure] placeholder. Recent roles get 3-5 bullets, old roles 1-2. Vary how bullets start.]</p></li></ul>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "projects": {
+      "title": "Projects",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "skills": {
+      "title": "Skills",
+      "icon": "",
+      "columns": 2,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "skill-0001",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "[CATEGORY]",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "[Only skills the person can discuss in an interview. Full names with acronyms in parentheses.]"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "icon": "",
+      "columns": 2,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "interests": {
+      "title": "Interests",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "awards": {
+      "title": "Awards",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "publications": {
+      "title": "Publications",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteering",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "bronzor",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": true,
+          "main": [
+            "summary",
+            "skills",
+            "experience",
+            "projects",
+            "education",
+            "languages",
+            "certifications",
+            "profiles",
+            "references",
+            "volunteer",
+            "interests",
+            "awards",
+            "publications"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 4,
+      "marginX": 14,
+      "marginY": 14,
+      "format": "a4",
+      "locale": "en-US",
+      "hideLinkUnderline": false,
+      "hideIcons": false,
+      "hideSectionIcons": true
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(234, 88, 12, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgb(255, 255, 255)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "400",
+          "400",
+          "600"
+        ],
+        "fontSize": 10.5,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 13.5,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": "Template: replace placeholders with verified facts before exporting.",
+    "styleRules": []
+  }
+}
