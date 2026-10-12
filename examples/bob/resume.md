@@ -46,7 +46,7 @@ Reorganized and rewrote 18 account setup and billing articles for Example Softwa
 **Diploma in Business Administration** - Example College
 2018 - 2020
 
-## Certifications & Diplomas
+## Certificates
 
 **Diploma in Customer Experience** - Example Learning Institute
 Jun 2024

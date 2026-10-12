@@ -25,7 +25,7 @@ Review dates, credentials, skill levels, contact details, and claims with the pe
 
 Include Projects when the person provides relevant work: project name, their role,
 dates, supported contributions, and an authorized link when useful. Include
-Certifications & Diplomas for relevant verified credentials or professional
+Certificates for relevant verified credentials or professional
 development: exact title, issuing organization, date, and verification link when
 available. Describe a course diploma as a course credential, not a degree. Do not
 invent entries to fill these sections; omit either section when empty or irrelevant.

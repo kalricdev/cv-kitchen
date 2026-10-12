@@ -17,7 +17,7 @@ Use for CV creation, review, or tailoring with supplied facts and document tools
 - Ask one question at a time for missing facts, then wait. Use the requested document language.
 - Use conventional headings such as Summary, Experience, Education, and Skills, with local-language equivalents. Use a single column, real body text, normal letter spacing, clear dates and titles, and ordinary bullets.
 - Put name and contact details in body text, not headers or footers. Avoid tables, text boxes, icons, photos, charts, and scanned-text CVs.
-- Include Projects and Certifications & Diplomas only for relevant, verified entries; omit empty sections. Describe course diplomas accurately, never as degrees. Use no decorative emojis in the CV.
+- Include Projects and Certificates only for relevant, verified entries; omit empty sections. Describe course diplomas accurately, never as degrees. Use no decorative emojis in the CV.
 - When generating documents, default to burnt-orange accents (#c2410c) and readable dark body text. Honor the user's format and styling requirements first.
 - Match supported job terminology naturally; never stuff keywords, fabricate ATS scores, or guarantee acceptance.
 - Protect private data. Uploads, email, and submissions need explicit authorization.

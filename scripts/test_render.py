@@ -46,6 +46,7 @@ class RenderTests(unittest.TestCase):
             {"name": "HIDDEN CERTIFICATE", "issuer": "Example Issuer", "hidden": True},
         ])
         for output in (render_markdown(self.data), build_html(self.data)):
+            self.assertIn("Certificates", output)
             self.assertIn("Fictional Certificate", output)
             self.assertNotIn("HIDDEN CERTIFICATE", output)
 
@@ -74,7 +75,7 @@ class RenderTests(unittest.TestCase):
                     self.assertNotIn("Fictional Support Project", output)
                     self.assertNotIn("Fictional Professional Diploma", output)
                     self.assertNotIn("Projects", output)
-                    self.assertNotIn("Certifications &", output)
+                    self.assertNotIn("Certificates", output)
 
     def test_rich_text_keeps_only_safe_emphasis(self):
         raw = '<p><strong onclick="run()">A &amp; B</strong><img src="https://example.com/x"> &lt;script&gt;</p>'
