@@ -1,0 +1,18 @@
+# Personal working data stays local. Fictional examples are tracked separately.
+/people/
+/exports/
+/tmp/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+.codegraph/
+.DS_Store
+Thumbs.db
