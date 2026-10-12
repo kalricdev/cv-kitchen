@@ -1,0 +1,287 @@
+{
+  "picture": {
+    "hidden": true,
+    "url": "",
+    "size": 32,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Bob Example",
+    "headline": "Customer Support Specialist",
+    "email": "bob@example.com",
+    "phone": "",
+    "location": "Example City",
+    "website": {
+      "url": "https://example.com/bob",
+      "label": "Example profile"
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Summary",
+    "icon": "",
+    "columns": 1,
+    "hidden": false,
+    "keepTogether": false,
+    "startOnNewPage": false,
+    "content": "<p>Customer support specialist with five years of experience answering software and retail questions. Handles email and chat tickets, troubleshoots account and billing issues, and turns recurring questions into useful help articles. Maintained 94% customer satisfaction across 210 survey responses in the first half of 2026.</p><p><em>Fictional example: all personal details, employers, qualifications, and achievements are invented.</em></p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "icon": "",
+      "columns": 3,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "experience": {
+      "title": "Experience",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "bob-exp-0001",
+          "hidden": false,
+          "company": "Example Software",
+          "position": "Customer Support Specialist",
+          "location": "Example City",
+          "period": "Jan 2023 - Sep 2026",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<ul><li><p>Managed 45 Zendesk tickets a week across email and chat; met the one-business-day response target on 96% of requests in the first half of 2026.</p></li><li><p>Resolved account setup, subscription, and billing questions. Maintained 94% customer satisfaction across 210 survey responses in the first half of 2026.</p></li><li><p>Rewrote 18 help articles on account setup and billing; repeat contacts for those topics fell 22% from Q4 2025 to Q1 2026.</p></li><li><p>Reproduced product bugs and recorded browser, device, and reproduction steps for engineering; kept customers informed until resolution.</p></li><li><p>Coached three new support associates on ticket triage, response templates, and escalation procedures.</p></li></ul>",
+          "roles": []
+        },
+        {
+          "id": "bob-exp-0002",
+          "hidden": false,
+          "company": "Example Retail",
+          "position": "Customer Service Associate",
+          "location": "Example City",
+          "period": "Jan 2021 - Dec 2022",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<ul><li><p>Answered order tracking, refund, and payment questions by phone and email, using CRM case history to avoid asking customers to repeat information.</p></li><li><p>Created 12 response templates for common order issues; average case handling time fell from 10 to 8 minutes during 2022.</p></li><li><p>Checked weekly return records with the store team and corrected discrepancies before handing records to finance.</p></li></ul>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "bob-edu-0001",
+          "hidden": false,
+          "degree": "Diploma in Business Administration",
+          "school": "Example College",
+          "location": "Example City",
+          "period": "2018 - 2020"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "skills": {
+      "title": "Skills",
+      "icon": "",
+      "columns": 2,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "bob-skill-0001",
+          "hidden": false,
+          "name": "Customer support",
+          "keywords": [
+            "Ticket triage",
+            "Email and chat support",
+            "Account troubleshooting",
+            "De-escalation",
+            "Escalation management"
+          ]
+        },
+        {
+          "id": "bob-skill-0002",
+          "hidden": false,
+          "name": "Tools and documentation",
+          "keywords": [
+            "Zendesk",
+            "CRM case tracking",
+            "Spreadsheets",
+            "Knowledge base writing",
+            "Support response templates"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "icon": "",
+      "columns": 2,
+      "hidden": false,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": [
+        {
+          "id": "bob-lang-0001",
+          "hidden": false,
+          "language": "English",
+          "fluency": "Native"
+        },
+        {
+          "id": "bob-lang-0002",
+          "hidden": false,
+          "language": "Spanish",
+          "fluency": "Professional working proficiency"
+        }
+      ]
+    },
+    "interests": {
+      "title": "Interests",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "awards": {
+      "title": "Awards",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "publications": {
+      "title": "Publications",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteering",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "keepTogether": false,
+      "startOnNewPage": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "bronzor",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": true,
+          "main": [
+            "summary",
+            "experience",
+            "skills",
+            "education",
+            "languages"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 4,
+      "marginX": 14,
+      "marginY": 14,
+      "format": "a4",
+      "locale": "en-US",
+      "hideLinkUnderline": false,
+      "hideIcons": false,
+      "hideSectionIcons": true
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(234, 88, 12, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgb(255, 255, 255)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "400",
+          "400",
+          "600"
+        ],
+        "fontSize": 10.5,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 13.5,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": "FICTIONAL DEMO: Bob Example is an invented customer support candidate. The identity, contact details, employers, qualification, dates, languages, skills, and achievements are synthetic; they do not describe any real person. Zendesk is named only as a tool in the fictional scenario. Synthetic evidence supplied for this demo: H1 2026 support report records an average of 45 weekly tickets, 96% within a one-business-day response target, and 94% CSAT from 210 responses; the knowledge base change log lists 18 revised articles and a 22% reduction in repeat contacts for those topics between Q4 2025 and Q1 2026; the onboarding roster lists three associates coached; the 2022 retail operations report lists 12 response templates and average handling time reduced from 10 to 8 minutes. These records are fictional scenario inputs, not external evidence. Target: Customer Support Specialist. No job posting supplied; this demonstrates a role-focused base CV, not a tailored response to an actual vacancy.",
+    "styleRules": []
+  }
+}

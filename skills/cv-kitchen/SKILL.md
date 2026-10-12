@@ -1,46 +1,50 @@
 ---
 name: cv-kitchen
-description: "Trigger: CV, resume, job application, tailor, setup. Prepare verified CVs with the self-contained CV Kitchen workflow."
+description: "Trigger: CV, resume, job application, tailor, ATS. Interview for verified facts and deliver a complete, ATS-readable CV."
 license: MIT
 metadata:
   author: kalricdev
-  version: "1.0"
+  version: "1.1"
 ---
 
 ## Activation Contract
 
-Load for CV interviews, drafting, tailoring, or local CV Kitchen setup. Resolve bundled references within this skill folder.
+Use for CV creation, review, or tailoring. Work directly with the person's facts and available document tools; require no repository checkout or technical setup.
 
 ## Hard Rules
 
-- Use verified facts only. Never invent experience, dates, credentials, skill levels, or metrics. Keep unresolved checks as draft blockers.
-- Preserve the base master and existing work. Use the requested document language and direct prose.
-- Ask one question at a time when a fact is missing, then wait.
-- Share authorized data only; redact private details. Uploads, billable setup, email, and submissions require explicit authorization.
+- Never invent employers, dates, experience, credentials, skills, or metrics. Keep unsupported requirements as gaps. Preserve the original CV.
+- Ask one question at a time for missing facts, then wait. Use the requested document language.
+- Use conventional headings such as Summary, Experience, Education, and Skills, with local-language equivalents. Use a single column, real body text, normal letter spacing, clear dates and titles, and ordinary bullets.
+- Put name and contact details in body text, not headers or footers. Avoid tables, text boxes, icons, photos, charts, and scanned-text CVs.
+- Match supported job terminology naturally; never stuff keywords, fabricate ATS scores, or guarantee acceptance.
+- Protect private data. Uploads, email, and submissions need explicit authorization.
 
 ## Decision Gates
 
-| Context | Action |
+| Available tools | Deliver |
 | --- | --- |
-| Browser chat | Read bundled references; interview and return complete JSON/prose; never pretend local execution |
-| Local agent | Locate the actual checkout; read its README and AGENTS; use documented tools |
-| Missing evidence | Keep the gap; do not turn it into a claim |
+| Document generation | Complete CV in the requested format; default to DOCX or text-based PDF |
+| Text only | Complete polished CV text ready to copy; never force Python or JSON setup |
+| Missing evidence | Ask and wait, or mark the claim unresolved outside the CV |
 
 ## Execution Steps
 
-1. Read `references/workflow.md`. Start with `references/master-template.json`; use `references/sample-master.json` only as a fictional shape example.
-2. Interview for verified facts and fill the master without changing its schema. Synchronize facts across language versions.
-3. For tailoring, compare the full posting with evidence. Create a separate variant emphasizing supported experience; return a factual change summary and gaps.
-4. Remove placeholders before final output. Compare all claims against the master.
-5. For local setup/export, read `references/local-setup.md`. Render Markdown/PDF, check extraction, and inspect pages if tools are available. Report unavailable checks; extraction alone cannot certify readiness.
+1. Establish target role, document language, existing CV or verified facts, and full job posting if available. Ask only for missing inputs, one at a time.
+2. Read bundled `references/workflow.md` and `references/ats-checklist.md` when available. Follow these main rules if references are unavailable.
+3. Interview for relevant responsibilities, achievements, skills, and evidence. Metrics are optional. Compare required and preferred qualifications; distinguish supported matches from gaps.
+4. Draft the complete CV with concise, specific prose. Tailor emphasis and wording while preserving factual claims. Review changes against source facts.
+5. Generate the user's submission format if supported. Inspect layout and compare extracted text, reading order, dates, visible content, and links against the approved CV. Report unavailable checks honestly.
+6. Use structured JSON only when requested for continuity; optional bundled template/example are not required outputs or user setup.
 
 ## Output Contract
 
-Return complete JSON or saved files, a brief change summary, supported matches and gaps, actual checks, and draft blockers. Never promise ATS acceptance.
+Deliver the complete CV first, then a brief change summary, genuine gaps, and actual checks or unverified items. Keep unsupported claims and draft blockers outside the CV. Never claim to generate or validate files without doing so.
 
 ## References
 
+Resolve within this skill folder:
+
 - `references/workflow.md`
-- `references/master-template.json`
-- `references/sample-master.json`
-- `references/local-setup.md`
+- `references/ats-checklist.md`
+- `references/master-template.json` and `references/sample-master.json` (optional)

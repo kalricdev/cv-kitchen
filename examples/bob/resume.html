@@ -1,0 +1,92 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<title>Bob Example</title>
+<style>
+/* Margins live on @page so every page gets them, not only the first. Chrome
+   leaves the @page margin area white, so paint_canvas() fills every page with
+   parchment underneath the content after printing. */
+@page { size: A4; margin: 13mm 16mm 11mm 16mm; }
+* { box-sizing: border-box; }
+html { background: #f5f4ed; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f4ed;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9.3pt;
+  line-height: 1.34;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+a { color: #006421; text-decoration: none; }
+header { margin-bottom: 9pt; }
+h1 {
+  font-size: 18.5pt;
+  line-height: 1.1;
+  letter-spacing: 0.2pt;
+  color: #006421;
+  margin: 0 0 3pt 0;
+  font-weight: 600;
+}
+.headline { font-size: 10.2pt; color: #46524a; margin: 0 0 6pt 0; font-style: italic; }
+.contact { font-size: 9.2pt; color: #4a4a4a; }
+.contact span:not(:last-child)::after { content: " · "; color: #9aa2ad; }
+.rule { height: 1.3pt; background: #006421; opacity: 0.85; margin: 0 0 10pt 0; }
+section { margin-bottom: 7pt; }
+h2 { break-after: avoid; }
+h2 {
+  font-size: 9.4pt;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #006421;
+  font-weight: 700;
+  margin: 0 0 5pt 0;
+  padding-bottom: 2.5pt;
+  border-bottom: 0.6pt solid rgba(0, 100, 33, 0.30);
+}
+p { margin: 0 0 5pt 0; }
+.item { margin-bottom: 6pt; page-break-inside: avoid; }
+.item:last-child { margin-bottom: 0; }
+.item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+.role { font-weight: 700; color: #12261a; font-size: 10.2pt; }
+.org { color: #006421; }
+.meta { font-size: 9pt; color: #5d675f; white-space: nowrap; }
+.edu-item { margin-bottom: 4pt; }
+/* Engagements nested under an umbrella entry, for consultancy work where the
+   client roles sit inside the consultancy's own dates. Indent plus a rule, no
+   tables and no columns, so the text still extracts in reading order. */
+.engagement { margin: 3pt 0 0 6pt; padding-left: 6pt; border-left: 1pt solid rgba(0, 100, 33, 0.22); page-break-inside: avoid; }
+.engagement .role { font-size: 9.6pt; }
+ul { margin: 3pt 0 0 0; padding-left: 12pt; }
+li { margin-bottom: 1.8pt; }
+li::marker { color: rgba(0, 100, 33, 0.55); }
+.skill { margin-bottom: 2.4pt; }
+.skill b { color: #12261a; }
+.summary p { text-align: justify; }
+</style></head><body>
+<header><h1>Bob Example</h1>
+<p class='headline'>Customer Support Specialist</p>
+<div class='contact'><span>Example City</span><span>bob@example.com</span><span>https://example.com/bob</span></div></header>
+<div class='rule'></div>
+<section class='summary'><h2>Summary</h2>
+<p>Customer support specialist with five years of experience answering software and retail questions. Handles email and chat tickets, troubleshoots account and billing issues, and turns recurring questions into useful help articles. Maintained 94% customer satisfaction across 210 survey responses in the first half of 2026.</p>
+<p><em>Fictional example: all personal details, employers, qualifications, and achievements are invented.</em></p>
+</section>
+<section><h2>Experience</h2>
+<div class='item'><div class='item-head'><div class='role'>Customer Support Specialist <span class='org'>· Example Software</span></div><div class='meta'>Jan 2023 - Sep 2026</div></div>
+<ul><li>Managed 45 Zendesk tickets a week across email and chat; met the one-business-day response target on 96% of requests in the first half of 2026.</li><li>Resolved account setup, subscription, and billing questions. Maintained 94% customer satisfaction across 210 survey responses in the first half of 2026.</li><li>Rewrote 18 help articles on account setup and billing; repeat contacts for those topics fell 22% from Q4 2025 to Q1 2026.</li><li>Reproduced product bugs and recorded browser, device, and reproduction steps for engineering; kept customers informed until resolution.</li><li>Coached three new support associates on ticket triage, response templates, and escalation procedures.</li></ul>
+</div>
+<div class='item'><div class='item-head'><div class='role'>Customer Service Associate <span class='org'>· Example Retail</span></div><div class='meta'>Jan 2021 - Dec 2022</div></div>
+<ul><li>Answered order tracking, refund, and payment questions by phone and email, using CRM case history to avoid asking customers to repeat information.</li><li>Created 12 response templates for common order issues; average case handling time fell from 10 to 8 minutes during 2022.</li><li>Checked weekly return records with the store team and corrected discrepancies before handing records to finance.</li></ul>
+</div>
+</section>
+<section><h2>Skills</h2>
+<div class='skill'><b>Customer support:</b> Ticket triage, Email and chat support, Account troubleshooting, De-escalation, Escalation management</div>
+<div class='skill'><b>Tools and documentation:</b> Zendesk, CRM case tracking, Spreadsheets, Knowledge base writing, Support response templates</div>
+</section>
+<section><h2>Education</h2>
+<div class='item'><div class='item-head'><div class='role'>Diploma in Business Administration <span class='org'>· Example College</span></div><div class='meta'>2018 - 2020</div></div>
+</div>
+</section>
+<section><h2>Languages</h2><p>English (Native) · Spanish (Professional working proficiency)</p></section>
+</body></html>

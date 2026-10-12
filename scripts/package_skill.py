@@ -15,7 +15,7 @@ FILES = (
     "SKILL.md",
     "LICENSE",
     "references/workflow.md",
-    "references/local-setup.md",
+    "references/ats-checklist.md",
     "references/master-template.json",
     "references/sample-master.json",
 )
