@@ -1,25 +1,14 @@
-# Tailoring workflow
+# Tailor a CV with evidence
 
-Keep `people/<name>/<language>/master.json` as the factual source. A tailored copy is an application artifact. Verify factual corrections before deliberately updating the master and affected copies.
+1. Provide an existing CV or verified career facts, a target role, the document language, and the full posting when available. The assistant asks for missing information one question at a time.
+2. Compare required and preferred qualifications with evidence. Keep missing requirements as gaps; do not add skills just because the posting lists them.
+3. Rewrite the summary and relevant bullets around supported work. Use the employer's terminology naturally when it accurately describes your experience. Preserve employers, dates, titles, qualifications, and metrics.
+4. Review the complete CV with the person. Use conventional headings, clear dates, and a single column. Put contact details in body text. Avoid tables, text boxes, icons, photos, and keyword stuffing.
+5. Deliver the requested DOCX or text-based PDF when document tools are available. Otherwise return complete, polished CV text ready to copy.
+6. Compare the exported document with the approved text. Check page layout, extracted reading order, visible content, dates, and links. Mark checks that could not be performed as unverified.
 
-1. Read the full posting and authorized evidence. List supported matches, missing requirements, and any draft blockers. Avoid invented ATS scores and hiring probabilities.
-2. Copy the master to `people/<name>/applications/<target>/resume.tailored.json`. Keep facts and schema intact. Reorder relevant entries and rewrite supported prose for the role.
-3. Compare the variant with the master. Verify employers, dates, qualifications, skill levels, and metrics. Ask one question at a time about missing facts; unanswered questions remain gaps.
-4. Write direct prose in the requested language. A measurable result is useful only when verified. Remove all placeholders before final export.
-5. Render and inspect both outputs. Preserve existing application files and use a unique target name.
+Keep the original CV and each tailored version separate. Structured JSON is optional continuity data, never a prerequisite for receiving a CV. A measurable result is useful only when verified.
 
-Run from the repository root using your virtual environment's Python:
+Use the [CV Kitchen skill](../skills/cv-kitchen/SKILL.md) or [tailoring prompt](ai-setup.md#tailoring-prompt). The bundled [ATS checklist](../skills/cv-kitchen/references/ats-checklist.md) explains document checks and their limits. No percentage score can certify universal ATS acceptance.
 
-```sh
-python scripts/render_md.py people/your-name/applications/target/resume.tailored.json people/your-name/applications/target/resume.md
-python scripts/render_pdf.py people/your-name/applications/target/resume.tailored.json exports/YourName_Resume_Role_Company.pdf
-python scripts/check_pdf.py exports/YourName_Resume_Role_Company.pdf
-```
-
-On PowerShell without activation, replace `python` with `.\.venv\Scripts\python.exe`.
-
-Compare JSON, Markdown, and PDF. Inspect every PDF page for clipping, blank pages, reading order, dates, and contact details. Extraction checks do not certify accuracy, completeness, or ATS acceptance.
-
-Keep the full job description, source URL, gap list, tailored files, and a short change summary with the application. Sending, emailing, or uploading requires a separate explicit instruction.
-
-Use the [portable skill](../skills/cv-kitchen/SKILL.md) or [tailoring prompt](ai-setup.md#tailoring-prompt). No globally installed skills are needed.
+Sending, emailing, or uploading an application requires a separate explicit instruction.

@@ -1,44 +1,50 @@
 # CV Kitchen agent instructions
 
-## Scope and source data
+## Product
 
-This project provides reusable CV tools and a portable assistant skill. Read
-`skills/cv-kitchen/SKILL.md` for setup, interviews, CV drafting, and tailoring.
+CV Kitchen is a reusable skill for verified, ATS-readable CVs. Read
+`skills/cv-kitchen/SKILL.md` for interviews, drafting, review, and tailoring.
+Its main rules must work when pasted alone; bundled references add detail.
 
-Treat each person's `people/<name>/<language>/master.json` as their factual source.
-Never invent experience, dates, credentials, skill levels, or metrics. Tailored
-copies belong under `people/<name>/applications/<target>/`; keep base masters
-unchanged unless the user authorizes a verified correction.
+Deliver the complete CV first. Use available document tools for the requested
+format, or return polished CV text ready to copy. Do not require a repository,
+Python environment, or JSON setup from the person. Structured JSON and local
+renderers are optional continuity and maintenance helpers.
 
-Ask one question at a time when a missing fact blocks drafting, then wait. Respect
-draft blockers and report checks actually performed. Never promise ATS acceptance.
+Never invent experience, employers, dates, credentials, skills, or metrics.
+Preserve source facts and original CVs. Ask one question at a time for missing
+facts, then wait. Keep gaps and draft blockers outside the CV. Report actual
+checks; never fabricate ATS scores or promise universal acceptance.
 
 ## Privacy and artifacts
 
-Use English for project documentation and code. Use the person's requested language
-for CV documents. Write direct prose supported by evidence.
+Use English for code and project documentation. Use the person's requested
+language for CV documents. Write direct prose supported by evidence.
 
-`people/`, `exports/`, and `tmp/` hold local private work and remain outside Git.
-Do not delete ignored files. Use fictional identities in public fixtures. Never
-commit credentials, API keys, .env files, contact details, or private evidence.
-Do not upload data, configure billable calls, email, or submit applications without
-explicit authorization.
+`people/`, `exports/`, and `tmp/` hold ignored private local work. Do not delete
+ignored files. Use fictional identities in public fixtures. Never commit secrets,
+contact details, real CVs, or private evidence. Uploads, billable setup, email,
+and submissions require explicit authorization.
 
-The skill is self-contained: its references resolve within `skills/cv-kitchen/`.
-Run `python scripts/package_skill.py` after changing its instructions or canonical
-template/example. Keep the tracked ZIP consistent with its source.
+For optional structured data, treat verified master facts as the source and
+preserve them across tailored copies and languages. Never reuse fictional sample
+claims as someone's experience.
 
-## Checks
+## Maintenance checks
 
-Use a local virtual environment and `requirements.txt`. Run
-`python scripts/test_render.py` and `python -m unittest discover -s tests`.
-Exercise affected export workflows. Inspect PDFs visually; text extraction alone
-does not establish accuracy or completeness. Report unavailable checks honestly.
+After changing the skill, references, or optional canonical template/example,
+run `python scripts/package_skill.py` and `python -m unittest discover -s tests`.
+Keep the tracked ZIP consistent with its allowlisted source.
+
+For renderer changes, use a local venv and requirements, run
+`python scripts/test_render.py`, and exercise the fictional export workflow.
+Inspect PDFs visually and compare extraction with source content. Report unavailable
+checks honestly. See `CONTRIBUTING.md` for developer commands.
 
 ## Git workflow
 
-Use a work branch from updated main. Review the diff for secrets and personal data,
+Use a work branch from updated main. Review changes for secrets and personal data,
 commit with a conventional commit message, publish the branch, and open a PR.
-Run relevant checks and address failures before merging. Verify the merged PR and
-the remote main commit. Never commit or push directly to main, force-push, or add
+Run relevant checks and repair failures before merging. Verify the merged PR and
+remote main commit. Never commit or push directly to main, force-push, or add
 Co-Authored-By or AI attribution.

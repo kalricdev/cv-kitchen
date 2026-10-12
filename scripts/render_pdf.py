@@ -74,7 +74,7 @@ section { margin-bottom: 7pt; }
 h2 { break-after: avoid; }
 h2 {
   font-size: 9.4pt;
-  letter-spacing: 1.5pt;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: %(ink)s;
   font-weight: 700;
