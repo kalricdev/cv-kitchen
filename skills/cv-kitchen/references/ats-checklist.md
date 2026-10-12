@@ -13,7 +13,7 @@ a text-based document.
 - Use ordinary bullets and real selectable text.
 - Use burnt-orange accents (#c2410c) sparingly with readable dark body text on a
   light background when document tools permit; honor required styling first.
-- Include Projects and Certifications & Diplomas only when relevant, verified
+- Include Projects and Certificates only when relevant, verified
   entries exist. Preserve exact credential names and distinguish course diplomas
   from academic degrees. Omit empty sections.
 - Avoid tables, text boxes, icons, photos, charts, and decorative graphics.

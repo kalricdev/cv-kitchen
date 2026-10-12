@@ -36,7 +36,7 @@ class BobExamplePdfTests(unittest.TestCase):
 
     def test_conventional_headings_extract_as_words_in_reading_order(self):
         # Letter spacing previously extracted SUMMARY as "S U M M A R Y".
-        headings = ("SUMMARY", "EXPERIENCE", "PROJECTS", "SKILLS", "EDUCATION", "CERTIFICATIONS & DIPLOMAS", "LANGUAGES")
+        headings = ("SUMMARY", "EXPERIENCE", "PROJECTS", "SKILLS", "EDUCATION", "CERTIFICATES", "LANGUAGES")
         for heading in headings:
             with self.subTest(heading=heading):
                 self.assertIn(heading, self.text)
