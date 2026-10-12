@@ -49,6 +49,33 @@ class RenderTests(unittest.TestCase):
             self.assertIn("Fictional Certificate", output)
             self.assertNotIn("HIDDEN CERTIFICATE", output)
 
+    def test_optional_projects_and_credentials_visible_hidden_or_empty(self):
+        self.data["sections"]["projects"].update(hidden=False, items=[
+            {"name": "Fictional Support Project", "period": "2024", "description": "<p>Wrote a fictional help guide.</p>"},
+        ])
+        self.data["sections"]["certifications"].update(hidden=False, items=[
+            {"name": "Fictional Professional Diploma", "issuer": "Example Institute", "date": "2024"},
+        ])
+        for render in (render_markdown, build_html):
+            with self.subTest(render=render.__name__):
+                output = render(self.data)
+                self.assertIn("Fictional Support Project", output)
+                self.assertIn("Fictional Professional Diploma", output)
+                self.assertIn("Wrote a fictional help guide.", output)
+                self.assertIn("Example Institute", output)
+                for state in ("hidden", "empty"):
+                    data = copy.deepcopy(self.data)
+                    for key in ("projects", "certifications"):
+                        if state == "hidden":
+                            data["sections"][key]["hidden"] = True
+                        else:
+                            data["sections"][key]["items"] = []
+                    output = render(data)
+                    self.assertNotIn("Fictional Support Project", output)
+                    self.assertNotIn("Fictional Professional Diploma", output)
+                    self.assertNotIn("Projects", output)
+                    self.assertNotIn("Certifications &", output)
+
     def test_rich_text_keeps_only_safe_emphasis(self):
         raw = '<p><strong onclick="run()">A &amp; B</strong><img src="https://example.com/x"> &lt;script&gt;</p>'
         safe = strip_html(raw)

@@ -25,7 +25,10 @@ class BobExamplePdfTests(unittest.TestCase):
             "Customer Service Associate", "Example Retail", "Jan 2021 - Dec 2022",
             "94% customer satisfaction across 210 survey responses",
             "repeat contacts for those topics fell 22%",
+            "Account Setup Help Refresh", "Q4 2025 - Q1 2026",
             "Diploma in Business Administration", "Example College", "2018 - 2020",
+            "Diploma in Customer Experience", "Example Learning Institute", "Jun 2024",
+            "Certificate in Support Operations", "Nov 2022",
             "English (Native)", "Spanish (Professional working proficiency)",
         ):
             with self.subTest(expected=expected):
@@ -33,7 +36,7 @@ class BobExamplePdfTests(unittest.TestCase):
 
     def test_conventional_headings_extract_as_words_in_reading_order(self):
         # Letter spacing previously extracted SUMMARY as "S U M M A R Y".
-        headings = ("SUMMARY", "EXPERIENCE", "SKILLS", "EDUCATION", "LANGUAGES")
+        headings = ("SUMMARY", "EXPERIENCE", "PROJECTS", "SKILLS", "EDUCATION", "CERTIFICATIONS & DIPLOMAS", "LANGUAGES")
         for heading in headings:
             with self.subTest(heading=heading):
                 self.assertIn(heading, self.text)

@@ -4,12 +4,12 @@ description: "Trigger: CV, resume, job application, tailor, ATS. Interview for v
 license: MIT
 metadata:
   author: kalricdev
-  version: "1.1"
+  version: "1.2"
 ---
 
 ## Activation Contract
 
-Use for CV creation, review, or tailoring. Work directly with the person's facts and available document tools; require no repository checkout or technical setup.
+Use for CV creation, review, or tailoring with supplied facts and document tools. Require no technical setup.
 
 ## Hard Rules
 
@@ -17,6 +17,8 @@ Use for CV creation, review, or tailoring. Work directly with the person's facts
 - Ask one question at a time for missing facts, then wait. Use the requested document language.
 - Use conventional headings such as Summary, Experience, Education, and Skills, with local-language equivalents. Use a single column, real body text, normal letter spacing, clear dates and titles, and ordinary bullets.
 - Put name and contact details in body text, not headers or footers. Avoid tables, text boxes, icons, photos, charts, and scanned-text CVs.
+- Include Projects and Certifications & Diplomas only for relevant, verified entries; omit empty sections. Describe course diplomas accurately, never as degrees. Use no decorative emojis in the CV.
+- When generating documents, default to burnt-orange accents (#c2410c) and readable dark body text. Honor the user's format and styling requirements first.
 - Match supported job terminology naturally; never stuff keywords, fabricate ATS scores, or guarantee acceptance.
 - Protect private data. Uploads, email, and submissions need explicit authorization.
 
@@ -30,16 +32,16 @@ Use for CV creation, review, or tailoring. Work directly with the person's facts
 
 ## Execution Steps
 
-1. Establish target role, document language, existing CV or verified facts, and full job posting if available. Ask only for missing inputs, one at a time.
-2. Read bundled `references/workflow.md` and `references/ats-checklist.md` when available. Follow these main rules if references are unavailable.
-3. Interview for relevant responsibilities, achievements, skills, and evidence. Metrics are optional. Compare required and preferred qualifications; distinguish supported matches from gaps.
-4. Draft the complete CV with concise, specific prose. Tailor emphasis and wording while preserving factual claims. Review changes against source facts.
-5. Generate the user's submission format if supported. Inspect layout and compare extracted text, reading order, dates, visible content, and links against the approved CV. Report unavailable checks honestly.
-6. Use structured JSON only when requested for continuity; optional bundled template/example are not required outputs or user setup.
+1. Establish target role, language, existing CV or verified facts, and available full posting. Ask only for missing inputs.
+2. Read `references/workflow.md` and `references/ats-checklist.md` when available; these main rules work independently.
+3. Interview for responsibilities, achievements, skills, and evidence. Metrics are optional. Distinguish supported qualifications from gaps.
+4. Draft the complete CV with specific prose. Tailor emphasis, preserve claims, and compare changes with source facts.
+5. Generate the requested format if supported. Check layout, extracted content, reading order, dates, and links against the approved CV. Report unavailable checks.
+6. Use JSON only when requested for continuity; bundled examples are optional, never mandatory deliverables.
 
 ## Output Contract
 
-Deliver the complete CV first, then a brief change summary, genuine gaps, and actual checks or unverified items. Keep unsupported claims and draft blockers outside the CV. Never claim to generate or validate files without doing so.
+Deliver the complete CV first, then changes, gaps, and actual or unverified checks. Keep unsupported claims and blockers outside it. Never pretend file generation or validation.
 
 ## References
 

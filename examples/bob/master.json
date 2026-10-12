@@ -104,10 +104,23 @@
       "title": "Projects",
       "icon": "",
       "columns": 1,
-      "hidden": true,
+      "hidden": false,
       "keepTogether": false,
       "startOnNewPage": false,
-      "items": []
+      "items": [
+        {
+          "id": "bob-project-0001",
+          "hidden": false,
+          "name": "Account Setup Help Refresh",
+          "period": "Q4 2025 - Q1 2026",
+          "description": "<p>Reorganized and rewrote 18 account setup and billing articles for Example Software. Repeat contacts for these topics fell 22% from Q4 2025 to Q1 2026.</p>",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          }
+        }
+      ]
     },
     "skills": {
       "title": "Skills",
@@ -184,13 +197,28 @@
       "items": []
     },
     "certifications": {
-      "title": "Certifications",
+      "title": "Certifications & Diplomas",
       "icon": "",
       "columns": 1,
-      "hidden": true,
+      "hidden": false,
       "keepTogether": false,
       "startOnNewPage": false,
-      "items": []
+      "items": [
+        {
+          "id": "bob-cert-0001",
+          "hidden": false,
+          "name": "Diploma in Customer Experience",
+          "issuer": "Example Learning Institute",
+          "date": "Jun 2024"
+        },
+        {
+          "id": "bob-cert-0002",
+          "hidden": false,
+          "name": "Certificate in Support Operations",
+          "issuer": "Example Learning Institute",
+          "date": "Nov 2022"
+        }
+      ]
     },
     "publications": {
       "title": "Publications",
@@ -231,8 +259,10 @@
           "main": [
             "summary",
             "experience",
+            "projects",
             "skills",
             "education",
+            "certifications",
             "languages"
           ],
           "sidebar": []
@@ -256,7 +286,7 @@
         "type": "circle"
       },
       "colors": {
-        "primary": "rgba(234, 88, 12, 1)",
+        "primary": "rgba(194, 65, 12, 1)",
         "text": "rgba(0, 0, 0, 1)",
         "background": "rgb(255, 255, 255)"
       }
@@ -281,7 +311,7 @@
         "lineHeight": 1.5
       }
     },
-    "notes": "FICTIONAL DEMO: Bob Example is an invented customer support candidate. The identity, contact details, employers, qualification, dates, languages, skills, and achievements are synthetic; they do not describe any real person. Zendesk is named only as a tool in the fictional scenario. Synthetic evidence supplied for this demo: H1 2026 support report records an average of 45 weekly tickets, 96% within a one-business-day response target, and 94% CSAT from 210 responses; the knowledge base change log lists 18 revised articles and a 22% reduction in repeat contacts for those topics between Q4 2025 and Q1 2026; the onboarding roster lists three associates coached; the 2022 retail operations report lists 12 response templates and average handling time reduced from 10 to 8 minutes. These records are fictional scenario inputs, not external evidence. Target: Customer Support Specialist. No job posting supplied; this demonstrates a role-focused base CV, not a tailored response to an actual vacancy.",
+    "notes": "FICTIONAL DEMO: Bob Example is an invented customer support candidate. The identity, contact details, employers, qualification, dates, languages, skills, and achievements are synthetic; they do not describe any real person. Zendesk is named only as a tool in the fictional scenario. Synthetic evidence supplied for this demo: H1 2026 support report records an average of 45 weekly tickets, 96% within a one-business-day response target, and 94% CSAT from 210 responses; the knowledge base change log lists 18 revised articles and a 22% reduction in repeat contacts for those topics between Q4 2025 and Q1 2026; the onboarding roster lists three associates coached; the 2022 retail operations report lists 12 response templates and average handling time reduced from 10 to 8 minutes. These records are fictional scenario inputs, not external evidence. Target: Customer Support Specialist. No job posting supplied; this demonstrates a role-focused base CV, not a tailored response to an actual vacancy. Additional fictional scenario records: the Account Setup Help Refresh project is the same 18-article knowledge base effort already documented under Example Software; no separate achievement or additional metric is implied. A synthetic professional development record lists the Diploma in Customer Experience completed in June 2024 and the Certificate in Support Operations completed in November 2022, both issued by the fictional Example Learning Institute. These are invented continuing-education credentials, not academic degrees or real certifications.",
     "styleRules": []
   }
 }

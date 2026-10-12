@@ -6,7 +6,7 @@ Usage:
 
 Layout is single-column: no tables, no columns, no text inside page
 headers or footers, real text only. The look follows tw93/Kami: parchment canvas,
-forest-green accent, serif body, wide margins.
+burnt-orange accent, serif body, wide margins.
 
 Rendering uses local headless Chrome, Chromium, or Edge. Check extraction with
 `python scripts/check_pdf.py <pdf>` and inspect the result visually before use.
@@ -36,7 +36,7 @@ CHROME_CANDIDATES = [
 ]
 
 PARCHMENT = "#f5f4ed"
-INK = "#006421"
+INK = "#c2410c"
 
 CSS = """
 /* Margins live on @page so every page gets them, not only the first. Chrome
@@ -80,7 +80,7 @@ h2 {
   font-weight: 700;
   margin: 0 0 5pt 0;
   padding-bottom: 2.5pt;
-  border-bottom: 0.6pt solid rgba(0, 100, 33, 0.30);
+  border-bottom: 0.6pt solid rgba(194, 65, 12, 0.30);
 }
 p { margin: 0 0 5pt 0; }
 .item { margin-bottom: 6pt; page-break-inside: avoid; }
@@ -93,11 +93,11 @@ p { margin: 0 0 5pt 0; }
 /* Engagements nested under an umbrella entry, for consultancy work where the
    client roles sit inside the consultancy's own dates. Indent plus a rule, no
    tables and no columns, so the text still extracts in reading order. */
-.engagement { margin: 3pt 0 0 6pt; padding-left: 6pt; border-left: 1pt solid rgba(0, 100, 33, 0.22); page-break-inside: avoid; }
+.engagement { margin: 3pt 0 0 6pt; padding-left: 6pt; border-left: 1pt solid rgba(194, 65, 12, 0.22); page-break-inside: avoid; }
 .engagement .role { font-size: 9.6pt; }
 ul { margin: 3pt 0 0 0; padding-left: 12pt; }
 li { margin-bottom: 1.8pt; }
-li::marker { color: rgba(0, 100, 33, 0.55); }
+li::marker { color: rgba(194, 65, 12, 0.55); }
 .skill { margin-bottom: 2.4pt; }
 .skill b { color: #12261a; }
 .summary p { text-align: justify; }
