@@ -26,6 +26,8 @@ The main skill contains the essential workflow and ATS rules. Bundled references
 Use CV Kitchen to build an ATS-ready CV. Ask one question at a time.
 My preferred document language is [LANGUAGE].
 I will provide my existing CV or verified career facts.
+Include projects and professional certificates or diplomas only when I provide
+relevant verified entries. Use orange accents if you can generate the document.
 ```
 
 ## Tailoring prompt
@@ -36,6 +38,7 @@ My preferred document language is [LANGUAGE].
 Here is my existing CV: [PASTE OR ATTACH].
 Here is the complete job posting: [PASTE].
 My required submission format is [DOCX, PDF, OR NOT SPECIFIED].
+OPTIONAL PROJECTS AND CREDENTIALS: [VERIFIED ENTRIES OR NONE].
 
 Keep all factual claims supported by my experience. Ask one question at a time
 when evidence is missing. Deliver the complete tailored CV, identify genuine

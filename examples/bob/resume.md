@@ -29,6 +29,13 @@ Jan 2021 - Dec 2022
 - Created 12 response templates for common order issues; average case handling time fell from 10 to 8 minutes during 2022.
 - Checked weekly return records with the store team and corrected discrepancies before handing records to finance.
 
+## Projects
+
+### Account Setup Help Refresh
+Q4 2025 - Q1 2026
+
+Reorganized and rewrote 18 account setup and billing articles for Example Software. Repeat contacts for these topics fell 22% from Q4 2025 to Q1 2026.
+
 ## Skills
 
 **Customer support:** Ticket triage, Email and chat support, Account troubleshooting, De-escalation, Escalation management
@@ -38,6 +45,14 @@ Jan 2021 - Dec 2022
 
 **Diploma in Business Administration** - Example College
 2018 - 2020
+
+## Certifications & Diplomas
+
+**Diploma in Customer Experience** - Example Learning Institute
+Jun 2024
+
+**Certificate in Support Operations** - Example Learning Institute
+Nov 2022
 
 ## Languages
 

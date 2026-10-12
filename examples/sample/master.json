@@ -146,7 +146,7 @@
       "items": []
     },
     "certifications": {
-      "title": "Certifications",
+      "title": "Certifications & Diplomas",
       "icon": "",
       "columns": 1,
       "hidden": true,
@@ -226,7 +226,7 @@
         "type": "circle"
       },
       "colors": {
-        "primary": "rgba(234, 88, 12, 1)",
+        "primary": "rgba(194, 65, 12, 1)",
         "text": "rgba(0, 0, 0, 1)",
         "background": "rgb(255, 255, 255)"
       }
