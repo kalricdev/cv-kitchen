@@ -1,4 +1,4 @@
-# 🍊 CV Kitchen
+# 🍅 CV Kitchen
 
 <p align="center">
   <img src="assets/cv-kitchen-hero-v2.png" alt="An illustrated kitchen serving a neatly arranged CV" width="900">
